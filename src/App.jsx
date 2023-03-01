@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route element={<ProtectedLogged />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Route>
 
         <Route element={<ProtectedLogOut />}>

@@ -5,7 +5,7 @@ import { Navigate, Outlet } from "react-router-dom";
 const ProtectedLogOut = () => {
   const { token } = useSelector((store) => store.userInfo);
   if (token) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/" />;
   } else {
     return <Outlet />;
   }
